@@ -16,12 +16,13 @@
   </main>
 
   <footer>
-
+    <FooterComp />
   </footer>
 
 </template>
 
 <script>
+import FooterComp from './components/FooterComp.vue';
 import ShopComp from './components/ShopComp.vue';
 import SocialComp from './components/SocialComp.vue';
 import StoresComp from './components/StoresComp.vue';
@@ -45,7 +46,8 @@ export default {
     InfoComp,
     StoresComp,
     SocialComp,
-    ShopComp
+    ShopComp,
+    FooterComp
   },
   data() {
     return {
