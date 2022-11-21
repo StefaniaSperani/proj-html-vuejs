@@ -15,7 +15,8 @@ $fa-font-path: './webfonts';
 
 body{
     font-family: 'Work Sans', sans-serif;
-    background-color: #fff;
+    background-color: $white;
+    color: $text;
 
     h1,
     h2{

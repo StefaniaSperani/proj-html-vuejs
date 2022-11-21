@@ -2,6 +2,7 @@
 
   <header>
     <NavbarComp />
+    <JumboComp />
   </header>
 
   <main>
@@ -15,15 +16,23 @@
 </template>
 
 <script>
+import JumboComp from './components/JumboComp.vue';
 import NavbarComp from './components/NavbarComp.vue';
+import { store } from './store';
 
 export default {
   components: {
-    NavbarComp
-  }
+    NavbarComp,
+    JumboComp
+  },
+  data() {
+    return {
+      store,
+    }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-
+@import './assets/partials/variables';
 </style>
