@@ -6,7 +6,7 @@
   </header>
 
   <main>
-
+    <CarouselComp />
   </main>
 
   <footer>
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import CarouselComp from './components/CarouselComp.vue';
 import JumboComp from './components/JumboComp.vue';
 import NavbarComp from './components/NavbarComp.vue';
 import { store } from './store';
@@ -23,7 +24,8 @@ import { store } from './store';
 export default {
   components: {
     NavbarComp,
-    JumboComp
+    JumboComp,
+    CarouselComp
   },
   data() {
     return {

@@ -2,9 +2,10 @@
 @import '../partials/variables';
 
 // FONT-AWESOME
-$fa-font-path: './webfonts';
+$fa-font-path: '../webfonts';
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
 
 // BOOTSTRAP
 @import 'bootstrap/scss/bootstrap';
@@ -21,5 +22,28 @@ body{
     h1,
     h2{
         font-family: 'Source Serif Pro', serif;
+        color: $primary;
+    }
+
+    .mycontainer {
+        padding: 5em;
+    }
+
+    .pre-title{
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+
+    .mybutton{
+        background-color: $primary;
+        color: $white;
+        padding: 0.8em 1.5em;
+        border: none;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: $bg-section;
+            color: $primary;
+        }
     }
 }

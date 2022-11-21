@@ -35,10 +35,14 @@ export default {
 
 nav {
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
     width: 100%;
     height: 90px;
     padding: 0.7em;
     background-color: $bg-section;
+    font-size: 0.9em;
 
 
     img {
