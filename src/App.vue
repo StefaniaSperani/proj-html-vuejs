@@ -9,7 +9,8 @@
     <CarouselComp />
     <MomentsComp />
     <Carousel2Comp />
-
+    <InfoComp />
+    <StoresComp />
   </main>
 
   <footer>
@@ -19,12 +20,15 @@
 </template>
 
 <script>
+import StoresComp from './components/StoresComp.vue';
+import InfoComp from './components/InfoComp.vue';
 import Carousel2Comp from './components/Carousel2Comp.vue';
 import MomentsComp from './components/MomentsComp.vue'
 import CarouselComp from './components/CarouselComp.vue';
 import JumboComp from './components/JumboComp.vue';
 import NavbarComp from './components/NavbarComp.vue';
 import { store } from './store';
+
 
 export default {
   components: {
@@ -33,6 +37,8 @@ export default {
     CarouselComp,
     MomentsComp,
     Carousel2Comp,
+    InfoComp,
+    StoresComp
   },
   data() {
     return {
