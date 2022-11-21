@@ -11,6 +11,8 @@
     <Carousel2Comp />
     <InfoComp />
     <StoresComp />
+    <SocialComp />
+    <ShopComp />
   </main>
 
   <footer>
@@ -20,6 +22,8 @@
 </template>
 
 <script>
+import ShopComp from './components/ShopComp.vue';
+import SocialComp from './components/SocialComp.vue';
 import StoresComp from './components/StoresComp.vue';
 import InfoComp from './components/InfoComp.vue';
 import Carousel2Comp from './components/Carousel2Comp.vue';
@@ -30,6 +34,7 @@ import NavbarComp from './components/NavbarComp.vue';
 import { store } from './store';
 
 
+
 export default {
   components: {
     NavbarComp,
@@ -38,7 +43,9 @@ export default {
     MomentsComp,
     Carousel2Comp,
     InfoComp,
-    StoresComp
+    StoresComp,
+    SocialComp,
+    ShopComp
   },
   data() {
     return {

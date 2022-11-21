@@ -1,6 +1,45 @@
 <template>
-    <div>
+    <div class="container-fluid">
+        <div class="mycontainer">
+            <div class="text-center">
+                <p class="pre-title">Locations</p>
+                <h2>Visit our Bakeries</h2>
+            </div>
 
+            <div class="d-flex flex-row py-5">
+                <div class="newyork">
+                    <img src="public\images\new-york-bk.jpg" alt="">
+                    <div class="d-flex flex-column p-5">
+                        <h2 class="text-center text-capitalize p-4">New York</h2>
+                        <div class="d-flex flex-row pt-2">
+                            <div class="pre-title d-flex flex-column text-center">Call us
+                                <div class="fs-5">1.800.458.556</div>
+                            </div>
+                            <div class="pre-title d-flex flex-column text-center">Open all week
+                                <span class="fs-5 text-uppercase">9:00.am - 6;00 pm</span>
+                            </div>
+                            <button class="mybutton">View map</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="london">
+                    <img src="public\images\london-bk.jpg" alt="">
+                    <div class="d-flex flex-column p-5">
+                        <h2 class="text-center text-capitalize p-4">New York</h2>
+                        <div class="d-flex flex-row pt-2">
+                            <div class="pre-title d-flex flex-column text-center">Call us
+                                <div class="fs-5">1.800.458.556</div>
+                            </div>
+                            <div class="pre-title d-flex flex-column text-center">Open all week
+                                <span class="fs-5 text-uppercase">9:00.am - 6;00 pm</span>
+                            </div>
+                            <button class="mybutton">View map</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -12,4 +51,28 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/partials/variables' as *;
+
+img {
+    width: 100%;
+}
+
+.newyork {
+    background-color: $newyork;
+}
+
+.london {
+    background-color: $london;
+}
+
+.mybutton {
+    color: $primary;
+    background-color: $white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+}
 </style>
