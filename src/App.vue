@@ -1,12 +1,26 @@
 <template>
-  <div>
 
-  </div>
+  <header>
+    <NavbarComp />
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
 </template>
 
 <script>
-export default {
+import NavbarComp from './components/NavbarComp.vue';
 
+export default {
+  components: {
+    NavbarComp
+  }
 }
 </script>
 
