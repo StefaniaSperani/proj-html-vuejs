@@ -14,6 +14,7 @@
                         <div class="mycarousel">
                             <img src="public\images\choco-chip-cookies.jpg" alt="Choco-Chip">
                             <img src="public\images\strawberry-jam-cookies.jpg" alt="Jam-Coockies">
+                            <img src="public\images\strawberry-jam-cookies.jpg" alt="Jam-Coockies">
                             <!-- <div class="overlay-card">
                                 <p>ciao</p>
                             </div> -->

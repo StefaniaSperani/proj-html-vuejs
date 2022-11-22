@@ -53,6 +53,7 @@ img {
 
 
 .hover:hover img {
+    overflow: hidden;
     opacity: 0.8;
 }
 

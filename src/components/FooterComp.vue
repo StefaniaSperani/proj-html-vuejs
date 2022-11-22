@@ -4,7 +4,7 @@
             <div class="left">
                 <a href="#"><img src="public\images\avada-bakery-logo-retina-200x97.png" alt="Logo"></a>
                 <ul class="navbar-nav d-flex flex-row pt-4">
-                    <li class="nav-item" v-for="(link, index) in store.links" :key="index">
+                    <li class="nav-item" v-for="(link, index) in links" :key="index">
                         <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
                     </li>
                     <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> <span class="cart">0</span></a></li>
@@ -40,6 +40,43 @@ export default {
     data() {
         return {
             store,
+            links: [
+                {
+                    text: "Shop",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "About",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Gallery",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Locations",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Journal",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Contact",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    text: "Orders",
+                    url: "#",
+                    current: false,
+                },
+            ],
         }
     },
 }
