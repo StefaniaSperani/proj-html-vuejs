@@ -99,7 +99,6 @@ export default {
     methods: {
         scrollLeft() {
             this.$refs['scroll'].scrollLeft -= 1100;
-            console.log(this.$refs['scroll'].scrollLeft, 'sono fuori if');
             // if (this.$refs['scroll'].scrollLeft === 0) {
             //     this.$refs['scroll'].scrollLeft += 1100;
             //     console.log(this.$refs['scroll'].scrollLeft);
@@ -107,7 +106,6 @@ export default {
         },
         scrollRight() {
             this.$refs['scroll'].scrollLeft += 1100;
-            console.log(this.$refs['scroll'].scrollLeft);
         }
     },
 }

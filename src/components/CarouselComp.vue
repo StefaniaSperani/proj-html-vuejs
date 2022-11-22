@@ -12,14 +12,18 @@
                 <div class="slider-wrapper">
                     <div class="slide text-center" v-for="(slide, index) in slides" :key="index">
                         <img :src="slide.img" :alt="slide.name">
-                        <!-- <p class="text-capitalize">{{ slide.name }}</p>
-                        <span>{{ slide.price }}</span> -->
+                        <div class="overlay-card">
+                            <div class="hover-text">
+                                <p class="pre-title">
+                                    {{ slide.name }}
+                                </p>
+                                <p>
+                                    {{ slide.price }}
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- <div class="overlay-card">
-                                <p>ciao</p>
-                            </div> -->
             </div>
             <span @click="scrollLeft"><i class="fa-solid fa-chevron-left"></i></span>
             <span @click="scrollRight"><i class="fa-solid fa-chevron-right"></i></span>
@@ -61,7 +65,6 @@ export default {
     methods: {
         scrollLeft() {
             this.$refs['scroll'].scrollLeft -= 800;
-            console.log(this.$refs['scroll'].scrollLeft, 'sono fuori if');
             // if (this.$refs['scroll'].scrollLeft === 0) {
             //     this.$refs['scroll'].scrollLeft += 1100;
             //     console.log(this.$refs['scroll'].scrollLeft);
@@ -69,7 +72,6 @@ export default {
         },
         scrollRight() {
             this.$refs['scroll'].scrollLeft += 800;
-            console.log(this.$refs['scroll'].scrollLeft);
         }
     },
 }
@@ -78,27 +80,7 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/styles/general.scss' as *;
 
-//     // .overlay-card {
-//     //     position: absolute;
-//     //     top: 0;
-//     //     bottom: 0;
-//     //     left: 0;
-//     //     right: 0;
-//     //     z-index: 5;
-//     //     background-color: rgba(0, 0, 0, 0.171);
-//     // }
-// }
 
-// // .carousel-control-prev,
-// // .carousel-control-next {
-// //     width: 5%;
-// // }
-
-// // .carousel-control-prev-icon,
-// // .carousel-control-next-icon {
-// //     background-color: $primary;
-// //     padding: 50px 0;
-// // }
 
 .mycontainer {
     padding: 0 !important;
@@ -133,25 +115,45 @@ export default {
             display: none;
         }
 
-        // .overlay-card {
-        //     position: absolute;
-        //     top: 0;
-        //     bottom: 0;
-        //     left: 0;
-        //     right: 0;
-        //     z-index: 5;
-        //     background-color: rgba(0, 0, 0, 0.171);
-        // }
         .slider-wrapper {
             width: 1575px;
             display: flex;
             flex-flow: row;
             gap: 1em;
-            position: relative;
 
-            .slide img {
-                width: 380px;
-                height: 480px;
+
+            .slide {
+                position: relative;
+
+                .overlay-card {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 5;
+                    background-color: rgba(0, 0, 0, 0.171);
+                }
+
+                .hover-text {
+                    position: absolute;
+                    z-index: 5;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: $text-opacity;
+                }
+
+
+                img {
+                    width: 380px;
+                    height: 480px;
+                }
+            }
+
+            .slide:hover .overlay-card {
+                display: block;
             }
         }
     }
