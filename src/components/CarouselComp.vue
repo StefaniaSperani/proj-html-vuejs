@@ -7,28 +7,22 @@
                 organic ingredients.</h1>
             <button class="mybutton">Start shopping</button>
         </div>
-        <div class="carousel mycontainer col-lg-6 col-md-12 col-sm-12">
-            <div class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="mycarousel">
-                            <img src="public\images\choco-chip-cookies.jpg" alt="Choco-Chip">
-                            <img src="public\images\strawberry-jam-cookies.jpg" alt="Jam-Coockies">
-                            <img src="public\images\strawberry-jam-cookies.jpg" alt="Jam-Coockies">
-                            <!-- <div class="overlay-card">
-                                <p>ciao</p>
-                            </div> -->
-                        </div>
-
+        <div class="carousel mycontainer">
+            <div class="mycarousel" ref="scroll">
+                <div class="slider-wrapper">
+                    <div class="slide text-center" v-for="(slide, index) in slides" :key="index">
+                        <img :src="slide.img" :alt="slide.name">
+                        <!-- <p class="text-capitalize">{{ slide.name }}</p>
+                        <span>{{ slide.price }}</span> -->
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+
+                <!-- <div class="overlay-card">
+                                <p>ciao</p>
+                            </div> -->
             </div>
+            <span @click="scrollLeft"><i class="fa-solid fa-chevron-left"></i></span>
+            <span @click="scrollRight"><i class="fa-solid fa-chevron-right"></i></span>
         </div>
     </div>
 
@@ -37,46 +31,129 @@
 
 <script>
 export default {
-    name: 'CarouselComp'
+    name: 'CarouselComp',
+    data() {
+        return {
+            slides: [
+                {
+                    img: 'public/images/choco-chip-cookies.jpg',
+                    name: 'Choco chip cookies',
+                    price: '$19.00 - $39.00'
+                },
+                {
+                    img: 'public/images/strawberry-jam-cookies.jpg',
+                    name: 'Strawberry jam cookies',
+                    price: '$19.00 - $39.00'
+                },
+                {
+                    img: 'public/images/blackberry-stuffed-bread.jpg',
+                    name: 'Blackberry stuffed bread',
+                    price: '$19.00 - $39.00'
+                },
+                {
+                    img: 'public/images/strawberry-donut.jpg',
+                    name: 'Strawberry donut',
+                    price: '$19.00 - $39.00'
+                },
+            ]
+        }
+    },
+    methods: {
+        scrollLeft() {
+            this.$refs['scroll'].scrollLeft -= 800;
+            console.log(this.$refs['scroll'].scrollLeft, 'sono fuori if');
+            // if (this.$refs['scroll'].scrollLeft === 0) {
+            //     this.$refs['scroll'].scrollLeft += 1100;
+            //     console.log(this.$refs['scroll'].scrollLeft);
+            // }
+        },
+        scrollRight() {
+            this.$refs['scroll'].scrollLeft += 800;
+            console.log(this.$refs['scroll'].scrollLeft);
+        }
+    },
 }
 </script>
 
 <style lang="scss" scoped>
 @use '../assets/styles/general.scss' as *;
 
-.mybutton {
-    text-transform: capitalize;
-}
+//     // .overlay-card {
+//     //     position: absolute;
+//     //     top: 0;
+//     //     bottom: 0;
+//     //     left: 0;
+//     //     right: 0;
+//     //     z-index: 5;
+//     //     background-color: rgba(0, 0, 0, 0.171);
+//     // }
+// }
 
-.mycarousel {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    position: relative;
+// // .carousel-control-prev,
+// // .carousel-control-next {
+// //     width: 5%;
+// // }
 
-    img {
-        width: 50%;
+// // .carousel-control-prev-icon,
+// // .carousel-control-next-icon {
+// //     background-color: $primary;
+// //     padding: 50px 0;
+// // }
+
+.mycontainer {
+    padding: 0 !important;
+    margin: 5em;
+    overflow: hidden;
+
+    .mybutton {
+        text-transform: capitalize;
     }
 
-    // .overlay-card {
-    //     position: absolute;
-    //     top: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     right: 0;
-    //     z-index: 5;
-    //     background-color: rgba(0, 0, 0, 0.171);
-    // }
-}
+    i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $primary;
+        padding: 25px 10px;
+        cursor: pointer;
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-}
+        &.fa-chevron-right {
+            right: 0;
+        }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: $primary;
-    padding: 50px 0;
+        &.fa-chevron-left {
+            left: 0;
+        }
+    }
+
+    .mycarousel {
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        // .overlay-card {
+        //     position: absolute;
+        //     top: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     z-index: 5;
+        //     background-color: rgba(0, 0, 0, 0.171);
+        // }
+        .slider-wrapper {
+            width: 1575px;
+            display: flex;
+            flex-flow: row;
+            gap: 1em;
+            position: relative;
+
+            .slide img {
+                width: 380px;
+                height: 480px;
+            }
+        }
+    }
 }
 </style>
