@@ -14,12 +14,18 @@
                         <img :src="slide.img" :alt="slide.name">
                         <p class="text-capitalize">{{ slide.name }}</p>
                         <span>{{ slide.price }}</span>
+                        <div class="overlay-card">
+                            <div class="hover-text">
+                                <span class="pre-title">
+                                    Select options
+                                </span>
+                                <span class="pre-title">
+                                    Quick view
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- <div class="overlay-card">
-                                <p>ciao</p>
-                            </div> -->
             </div>
             <span @click="scrollLeft"><i class="fa-solid fa-chevron-left"></i></span>
             <span @click="scrollRight"><i class="fa-solid fa-chevron-right"></i></span>
@@ -147,15 +153,6 @@ export default {
             display: none;
         }
 
-        // .overlay-card {
-        //     position: absolute;
-        //     top: 0;
-        //     bottom: 0;
-        //     left: 0;
-        //     right: 0;
-        //     z-index: 5;
-        //     background-color: rgba(0, 0, 0, 0.171);
-        // }
         .slider-wrapper {
             width: 2345px;
             display: flex;
@@ -163,9 +160,38 @@ export default {
             gap: 1em;
             position: relative;
 
-            .slide img {
-                width: 260px;
-                height: 320px;
+            .slide {
+                position: relative;
+
+                .overlay-card {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 5;
+                    background-color: rgba(0, 0, 0, 0.171);
+                }
+
+                .hover-text {
+                    position: absolute;
+                    z-index: 5;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: $text-opacity;
+                }
+
+
+                img {
+                    width: 260px;
+                    height: 320px;
+                }
+            }
+
+            .slide:hover .overlay-card {
+                display: block;
             }
         }
     }

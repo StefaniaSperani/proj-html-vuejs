@@ -2,8 +2,10 @@
     <div class="container-fluid">
         <div class="mycontainer">
             <div class="row">
-                <div class="col hover">
-                    <img src="public\images\social-1.jpg" alt="">
+                <div class="col">
+                    <div class="bigger">
+                        <img src="public\images\social-1.jpg" alt="social1">
+                    </div>
                 </div>
                 <div class="col-6">
                     <div class="socials">
@@ -15,22 +17,17 @@
                             us</button>
                     </div>
                 </div>
-                <div class="col hover">
-                    <img src="public\images\social-2.jpg" alt="">
+                <div class="col">
+                    <div class="bigger">
+                        <img src="public\images\social-2.jpg" alt="social2">
+                    </div>
                 </div>
             </div>
             <div class="row pt-3">
-                <div class="col-3 hover">
-                    <img src="public\images\social-3.jpg" alt="">
-                </div>
-                <div class="col-3 hover">
-                    <img src="public\images\social-4.jpg" alt="">
-                </div>
-                <div class="col-3 hover">
-                    <img src="public\images\social-5.jpg" alt="">
-                </div>
-                <div class="col-3 hover">
-                    <img src="public\images\social-6.jpg" alt="">
+                <div class="col-3" v-for="(social, index) in socials" :key="index">
+                    <div class="bigger">
+                        <img :src="social.img" :alt="social.title">
+                    </div>
                 </div>
             </div>
 
@@ -40,7 +37,29 @@
 
 <script>
 export default {
-    name: 'SocialComp'
+    name: 'SocialComp',
+    data() {
+        return {
+            socials: [
+                {
+                    img: 'public/images/social-3.jpg',
+                    title: 'social-3'
+                },
+                {
+                    img: 'public/images/social-4.jpg',
+                    title: 'social-4'
+                },
+                {
+                    img: 'public/images/social-5.jpg',
+                    title: 'social-5'
+                },
+                {
+                    img: 'public/images/social-6.jpg',
+                    title: 'social-6'
+                }
+            ]
+        }
+    },
 }
 </script>
 
@@ -49,12 +68,18 @@ export default {
 
 img {
     width: 100%;
+    transition: 2s;
+
 }
 
-
-.hover:hover img {
+.bigger {
     overflow: hidden;
-    opacity: 0.8;
+}
+
+.bigger:hover img {
+    transform: scale(1.2);
+    filter: opacity(0.9);
+
 }
 
 .socials {

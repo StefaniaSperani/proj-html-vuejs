@@ -8,7 +8,9 @@
 
             <div class="d-flex flex-row py-5">
                 <div class="newyork">
-                    <img src="public\images\new-york-bk.jpg" alt="">
+                    <div class="bigger">
+                        <img src="public\images\new-york-bk.jpg" alt="">
+                    </div>
                     <div class="d-flex flex-column p-5">
                         <h2 class="text-center text-capitalize p-4">New York</h2>
                         <div class="d-flex flex-row justify-content-between pt-2">
@@ -24,7 +26,10 @@
                 </div>
 
                 <div class="london">
-                    <img src="public\images\london-bk.jpg" alt="">
+                    <div class="bigger">
+                        <img src="public\images\london-bk.jpg" alt="">
+                    </div>
+
                     <div class="d-flex flex-column p-5">
                         <h2 class="text-center text-capitalize p-4">London</h2>
                         <div class="d-flex flex-row justify-content-between pt-2">
@@ -58,10 +63,22 @@ img {
 
 .newyork {
     background-color: $newyork;
+    overflow: hidden;
+
 }
 
 .london {
     background-color: $london;
+    overflow: hidden;
+}
+
+.bigger {
+    transition: 2s;
+}
+
+.bigger:hover {
+    transform: scale(1.2);
+    filter: opacity(0.9);
 }
 
 .mybutton {
