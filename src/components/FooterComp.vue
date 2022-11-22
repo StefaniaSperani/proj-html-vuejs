@@ -91,5 +91,6 @@ input {
     color: $primary;
     font-size: 30px;
     margin-left: 2em;
+    cursor: pointer;
 }
 </style>

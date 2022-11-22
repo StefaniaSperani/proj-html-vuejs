@@ -6,18 +6,34 @@
             </p>
             <h1>Baking special moments</h1>
             <div class="moments">
-                <img class="up" src="public\images\corporate-bg.jpg" alt="Corporate">
-                <!-- <div class="hover-corp">
-                    <img class="down" src="public\images\corporate-hover-bg.jpg" alt="CorporateHover">
-                    <div class="hover-text">
-                        <p class="pre-title">
-                            International bakery
-                        </p>
-                        <h1>Corporate events</h1>
-                        <button class="mybutton">Explore more</button>
+                <div class="up">
+                    <img src="public\images\corporate-bg.jpg" alt="Corporate">
+                    <div class="hover-corp">
+                        <img src="public\images\corporate-hover-bg.jpg" alt="CorporateHover">
+                        <div class="hover-text">
+                            <p class="pre-title">
+                                International bakery
+                            </p>
+                            <h1>Corporate events</h1>
+                            <button class="mybutton">Explore more</button>
+                        </div>
                     </div>
-                </div> -->
-                <img src="public\images\wedding-bg.jpg" alt="Wedding">
+                </div>
+
+                <div class="up">
+                    <img src="public\images\wedding-bg.jpg" alt="Wedding">
+                    <div class="hover-corp">
+                        <img src="public\images\wedding-hover-bg.jpg" alt="WeddingHover">
+                        <div class="hover-text">
+                            <p class="pre-title">
+                                Private dining hall
+                            </p>
+                            <h1>Wedding & parties</h1>
+                            <button class="mybutton">Explore more</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -42,13 +58,19 @@ h1 {
     display: flex;
     justify-content: space-between;
 
+    .up {
+        position: relative;
+        transition: 0.5s;
+    }
+
     .hover-corp {
         display: none;
-        position: relative;
+        position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
+
 
         .hover-text {
             position: absolute;
@@ -61,12 +83,10 @@ h1 {
         h1 {
             color: $white;
         }
-
     }
 
-
-    &:hover down {
-        display: inline-block;
+    .up:hover .hover-corp {
+        display: block;
     }
 
     img {

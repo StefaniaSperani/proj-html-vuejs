@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="mycontainer">
             <div class="row">
-                <div class="col">
+                <div class="col hover">
                     <img src="public\images\social-1.jpg" alt="">
                 </div>
                 <div class="col-6">
@@ -15,21 +15,21 @@
                             us</button>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col hover">
                     <img src="public\images\social-2.jpg" alt="">
                 </div>
             </div>
             <div class="row pt-3">
-                <div class="col-3">
+                <div class="col-3 hover">
                     <img src="public\images\social-3.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-3 hover">
                     <img src="public\images\social-4.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-3 hover">
                     <img src="public\images\social-5.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-3 hover">
                     <img src="public\images\social-6.jpg" alt="">
                 </div>
             </div>
@@ -49,6 +49,11 @@ export default {
 
 img {
     width: 100%;
+}
+
+
+.hover:hover img {
+    opacity: 0.8;
 }
 
 .socials {
