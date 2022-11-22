@@ -1,5 +1,6 @@
 import { reactive } from "vue";
 import axios from "axios";
+import { getInnerRange } from "@vue/compiler-core";
 
 export const store = reactive({
   links: [

@@ -11,19 +11,21 @@
             <div class="mycarousel" ref="scroll">
                 <div class="slider-wrapper">
                     <div class="slide text-center" v-for="(slide, index) in slides" :key="index">
-                        <img :src="slide.img" :alt="slide.name">
-                        <p class="text-capitalize">{{ slide.name }}</p>
-                        <span>{{ slide.price }}</span>
-                        <div class="overlay-card">
-                            <div class="hover-text">
-                                <span class="pre-title">
-                                    Select options
-                                </span>
-                                <span class="pre-title">
-                                    Quick view
-                                </span>
+                        <div class="position-relative">
+                            <img :src="slide.img" :alt="slide.name">
+                            <div class="overlay-card">
+                                <div class="hover-text">
+                                    <span class="pre-title">
+                                        Select options
+                                    </span>
+                                    <span class="pre-title">
+                                        Quick view
+                                    </span>
+                                </div>
                             </div>
                         </div>
+                        <p class="text-capitalize">{{ slide.name }}</p>
+                        <span>{{ slide.price }}</span>
                     </div>
                 </div>
             </div>

@@ -19,9 +19,11 @@
     <FooterComp />
   </footer>
 
+  <ScrollComp />
 </template>
 
 <script>
+import ScrollComp from './components/ScrollComp.vue';
 import FooterComp from './components/FooterComp.vue';
 import ShopComp from './components/ShopComp.vue';
 import SocialComp from './components/SocialComp.vue';
@@ -47,14 +49,17 @@ export default {
     StoresComp,
     SocialComp,
     ShopComp,
-    FooterComp
+    FooterComp,
+    ScrollComp
   },
   data() {
     return {
       store,
     }
   },
+
 }
+
 </script>
 
 <style lang="scss" scoped>

@@ -57,17 +57,17 @@ h1 {
 
     .up {
         position: relative;
-        transition: 0.5s;
     }
 
     .hover-corp {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-
+        transition: opacity 1s ease-in-out;
 
         .hover-text {
             position: absolute;
@@ -84,6 +84,8 @@ h1 {
 
     .up:hover .hover-corp {
         display: block;
+        visibility: visible;
+        opacity: 1;
     }
 
     img {
