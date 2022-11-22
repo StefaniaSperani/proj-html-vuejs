@@ -26,7 +26,7 @@
                 <div class="london">
                     <img src="public\images\london-bk.jpg" alt="">
                     <div class="d-flex flex-column p-5">
-                        <h2 class="text-center text-capitalize p-4">New York</h2>
+                        <h2 class="text-center text-capitalize p-4">London</h2>
                         <div class="d-flex flex-row justify-content-between pt-2">
                             <div class="pre-title d-flex flex-column text-center">Call us
                                 <div class="fs-5">1.800.458.556</div>
