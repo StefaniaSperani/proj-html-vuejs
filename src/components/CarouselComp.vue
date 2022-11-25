@@ -40,22 +40,22 @@ export default {
         return {
             slides: [
                 {
-                    img: 'public/images/choco-chip-cookies.jpg',
+                    img: '/public/images/choco-chip-cookies.jpg',
                     name: 'Choco chip cookies',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/strawberry-jam-cookies.jpg',
+                    img: '/public/images/strawberry-jam-cookies.jpg',
                     name: 'Strawberry jam cookies',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/blackberry-stuffed-bread.jpg',
+                    img: '/public/images/blackberry-stuffed-bread.jpg',
                     name: 'Blackberry stuffed bread',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/strawberry-donut.jpg',
+                    img: '/public/images/strawberry-donut.jpg',
                     name: 'Strawberry donut',
                     price: '$19.00 - $39.00'
                 },

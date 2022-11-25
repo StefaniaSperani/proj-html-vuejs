@@ -9,7 +9,7 @@
             <div class="d-flex flex-row py-5">
                 <div class="newyork">
                     <div class="bigger">
-                        <img src="public\images\new-york-bk.jpg" alt="">
+                        <img src="/public/images/new-york-bk.jpg" alt="">
                     </div>
                     <div class="d-flex flex-column p-5">
                         <h2 class="text-center text-capitalize p-4">New York</h2>
@@ -27,7 +27,7 @@
 
                 <div class="london">
                     <div class="bigger">
-                        <img src="public\images\london-bk.jpg" alt="">
+                        <img src="/public/images/london-bk.jpg" alt="">
                     </div>
 
                     <div class="d-flex flex-column p-5">

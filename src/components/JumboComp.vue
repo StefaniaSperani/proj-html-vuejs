@@ -25,7 +25,7 @@ export default {
 @use '../assets/partials/variables' as *;
 
 .jumbo {
-    background-image: url(public/images/hero-header-bakery.jpg);
+    background-image: url(/public/images/hero-header-bakery.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 -30px;

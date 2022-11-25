@@ -19,7 +19,7 @@ export default {
 @use '../assets/partials/variables' as *;
 
 .bg-img {
-    background-image: url(public/images/call-to-action-bg.jpg);
+    background-image: url(/public/images/call-to-action-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;

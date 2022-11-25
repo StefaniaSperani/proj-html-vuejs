@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col">
                     <div class="bigger">
-                        <img src="public\images\social-1.jpg" alt="social1">
+                        <img src="/public/images/social-1.jpg" alt="social1">
                     </div>
                 </div>
                 <div class="col-6">
@@ -19,7 +19,7 @@
                 </div>
                 <div class="col">
                     <div class="bigger">
-                        <img src="public\images\social-2.jpg" alt="social2">
+                        <img src="/public/images/social-2.jpg" alt="social2">
                     </div>
                 </div>
             </div>
@@ -42,19 +42,19 @@ export default {
         return {
             socials: [
                 {
-                    img: 'public/images/social-3.jpg',
+                    img: '/public/images/social-3.jpg',
                     title: 'social-3'
                 },
                 {
-                    img: 'public/images/social-4.jpg',
+                    img: '/public/images/social-4.jpg',
                     title: 'social-4'
                 },
                 {
-                    img: 'public/images/social-5.jpg',
+                    img: '/public/images/social-5.jpg',
                     title: 'social-5'
                 },
                 {
-                    img: 'public/images/social-6.jpg',
+                    img: '/public/images/social-6.jpg',
                     title: 'social-6'
                 }
             ]

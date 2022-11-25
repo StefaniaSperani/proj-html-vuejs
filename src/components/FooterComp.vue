@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="mycontainer d-flex justify-content-between">
             <div class="left">
-                <a href="#"><img src="public\images\avada-bakery-logo-retina-200x97.png" alt="Logo"></a>
+                <a href="#"><img src="/public/images/avada-bakery-logo-retina-200x97.png" alt="Logo"></a>
                 <ul class="navbar-nav d-flex flex-row pt-4">
                     <li class="nav-item" v-for="(link, index) in links" :key="index">
                         <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>

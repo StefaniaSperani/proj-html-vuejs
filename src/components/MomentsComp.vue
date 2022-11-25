@@ -7,9 +7,9 @@
             <h1>Baking special moments</h1>
             <div class="moments">
                 <div class="up">
-                    <img src="public\images\corporate-bg.jpg" alt="Corporate">
+                    <img src="/public/images/corporate-bg.jpg" alt="Corporate">
                     <div class="hover-corp">
-                        <img src="public\images\corporate-hover-bg.jpg" alt="CorporateHover">
+                        <img src="/public/images/corporate-hover-bg.jpg" alt="CorporateHover">
                         <div class="hover-text">
                             <p class="pre-title">
                                 International bakery
@@ -21,9 +21,9 @@
                 </div>
 
                 <div class="up">
-                    <img src="public\images\wedding-bg.jpg" alt="Wedding">
+                    <img src="/public/images/wedding-bg.jpg" alt="Wedding">
                     <div class="hover-corp">
-                        <img src="public\images\wedding-hover-bg.jpg" alt="WeddingHover">
+                        <img src="/public/images/wedding-hover-bg.jpg" alt="WeddingHover">
                         <div class="hover-text">
                             <p class="pre-title">
                                 Private dining hall

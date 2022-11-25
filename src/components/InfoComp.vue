@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="mycontainer row gap-4">
             <div class="col-12 px-0 position-relative">
-                <img src="public\images\bakery-process-1.jpg" alt="process">
+                <img src="/public/images/bakery-process-1.jpg" alt="process">
                 <div class="veil position-absolute">
                     <div class="d-flex justify-content-between align-items-center p-5">
                         <h1>Tell us what you have in mind</h1>
@@ -26,7 +26,7 @@
 
             <div class="row">
                 <div class="col-6 px-0 d-flex gap-4 position-relative">
-                    <img src="public\images\bakery-process-2.jpg" alt="process-2">
+                    <img src="/public/images/bakery-process-2.jpg" alt="process-2">
                     <div class="veil position-absolute">
                         <div class="d-flex justify-content-between align-items-center p-5">
                             <h1 class="text-capitalize">We start baking</h1>
@@ -62,7 +62,7 @@
 
 
             <div class="col-12 px-0 position-relative">
-                <img src="public\images\bakery-process-3.jpg" alt="process-3">
+                <img src="/public/images/bakery-process-3.jpg" alt="process-3">
                 <div class="veil position-absolute">
                     <div class="d-flex justify-content-between align-items-center p-5">
                         <h1>Delivered to your home</h1>

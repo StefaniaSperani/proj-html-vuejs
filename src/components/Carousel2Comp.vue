@@ -42,62 +42,62 @@ export default {
         return {
             slides: [
                 {
-                    img: 'public/images/choco-chip-cookies.jpg',
+                    img: '/public/images/choco-chip-cookies.jpg',
                     name: 'Choco chip cookies',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/strawberry-jam-cookies.jpg',
+                    img: '/public/images/strawberry-jam-cookies.jpg',
                     name: 'Strawberry jam cookies',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/blackberry-stuffed-bread.jpg',
+                    img: '/public/images/blackberry-stuffed-bread.jpg',
                     name: 'Blackberry stuffed bread',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/strawberry-donut.jpg',
+                    img: '/public/images/strawberry-donut.jpg',
                     name: 'Strawberry donut',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/perfect-macarons.jpg',
+                    img: '/public/images/perfect-macarons.jpg',
                     name: 'Macarons',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/home-bread.jpg',
+                    img: '/public/images/home-bread.jpg',
                     name: 'Home bread',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/premium-bread.jpg',
+                    img: '/public/images/premium-bread.jpg',
                     name: 'Premium bread',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/cherry-cake.jpg',
+                    img: '/public/images/cherry-cake.jpg',
                     name: 'Cherry cake',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/cookies-with-ice-cream.jpg',
+                    img: '/public/images/cookies-with-ice-cream.jpg',
                     name: 'Cookis ice cream',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/glazed-pancake-with-lemon.jpg',
+                    img: '/public/images/glazed-pancake-with-lemon.jpg',
                     name: 'Glazed pancake',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/small-cupcake.jpg',
+                    img: '/public/images/small-cupcake.jpg',
                     name: 'Cupcake',
                     price: '$19.00 - $39.00'
                 },
                 {
-                    img: 'public/images/premium-bread.jpg',
+                    img: '/public/images/premium-bread.jpg',
                     name: 'Premium bread',
                     price: '$19.00 - $39.00'
                 }
