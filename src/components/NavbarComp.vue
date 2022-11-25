@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a href="#"><img src="public\images\avada-bakery-logo-retina-200x97.png" alt="Logo"></a>
+            <a href="#"><img src="public/images/avada-bakery-logo-retina-200x97.png" alt="Logo"></a>
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
